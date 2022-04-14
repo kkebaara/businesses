@@ -6,7 +6,6 @@ class BusinessesController < ApplicationController
         render json: businesses 
     end
 
-
     def show
         business = Business.find(params[:id])
         render json: business
