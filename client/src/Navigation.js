@@ -14,11 +14,11 @@ function Navigation({cart, setIsAuthenticated, setUser, user}) {
     return (
         <> 
    
-         <h1>Flatiron Theater Company</h1>
+         <h1>Businesses/h1>
          <div>
             <button onClick={logout}>Logout</button>
            <h1><Link to="/"> Home</Link></h1>
-           {user&&user.admin?<h1><Link to="/productions/new">New Production</Link></h1>:null}
+           {user&&user.admin?<h1><Link to="/businesses/new">New Business</Link></h1>:null}
 
          </div>
 
@@ -27,3 +27,4 @@ function Navigation({cart, setIsAuthenticated, setUser, user}) {
 }
 
 export default Navigation;
+

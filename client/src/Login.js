@@ -28,6 +28,7 @@ function Login({setUser,setIsAuthenticated}) {
             .then(user=>{
               setUser(user)
               setIsAuthenticated(true)
+              //navigate('/home')
             })
             
           } else {
